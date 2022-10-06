@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 2em auto 0;
+}
+
+.main-logo-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-img {
+  margin-top: -20px;
+  width: 120px;
+}
+
+.pokemon-name {
+  text-transform: capitalize;
+}
+
+.ability-box {
+  border: 10px double rgba(109, 145, 198, 1);
+  border-radius: 10px;
+  padding: 1em;
+  background-color: #f8f855;
+  align-self: flex-end;
+}
+
+.ability-title {
+  text-decoration: underline;
+  margin-top: 0;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-abilites {
+  font-style: italic;
+  line-height: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .main {
+    max-width: 300px;
+  }
+}
