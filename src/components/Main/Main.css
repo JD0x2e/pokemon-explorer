@@ -17,6 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 500px;
 }
 
 .pokemon-img {
@@ -61,10 +62,26 @@
   border: 15px double rgba(109, 145, 198, 1);
   border-radius: 10px;
   background: rgba(245, 204, 5, 1);
+  position: relative;
 }
 
 @media only screen and (max-width: 550px) {
   .top-half {
     max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0em auto 0;
+  }
+  .pokemon-abilites {
+    text-transform: capitalize;
+    line-height: normal;
+    font-style: italic;
+  }
+  .pokemon-stats {
+    text-transform: capitalize;
+    line-height: normal;
+    font-style: italic;
   }
 }
