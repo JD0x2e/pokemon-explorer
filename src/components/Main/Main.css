@@ -1,16 +1,22 @@
-.main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 400px;
-  margin: 2em auto 0;
-}
-
 .main-logo-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.top-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 2em auto 0;
+}
+
+.bottom-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pokemon-img {
@@ -20,31 +26,45 @@
 
 .pokemon-name {
   text-transform: capitalize;
-}
-
-.ability-box {
-  border: 10px double rgba(109, 145, 198, 1);
-  border-radius: 10px;
-  padding: 1em;
-  background-color: #f8f855;
-  align-self: flex-end;
+  color: white;
 }
 
 .ability-title {
   text-decoration: underline;
-  margin-top: 0;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
+}
+
+.stats-title {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.pokemon-stats {
+  text-transform: capitalize;
+  line-height: 10px;
+  font-style: italic;
 }
 
 .pokemon-abilites {
-  font-style: italic;
+  text-transform: capitalize;
   line-height: 10px;
+  font-style: italic;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 2em;
+  width: 80%;
+  padding: 1em 2em;
+  border: 15px double rgba(109, 145, 198, 1);
+  border-radius: 10px;
+  background: rgba(245, 204, 5, 1);
 }
 
 @media only screen and (max-width: 550px) {
-  .main {
+  .top-half {
     max-width: 300px;
   }
 }

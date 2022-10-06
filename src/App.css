@@ -3,13 +3,20 @@
 }
 
 body {
-  background: rgb(255, 253, 0);
-  background: linear-gradient(20deg, rgba(255, 253, 0, 1) 0%, rgba(109, 145, 198, 1) 55%);
+  background: linear-gradient(
+    180deg,
+    rgba(245, 204, 5, 1) 0%,
+    rgba(10, 77, 156, 1) 24%,
+    rgba(10, 77, 156, 1) 50%,
+    rgba(10, 77, 156, 1) 100%,
+    rgba(245, 204, 5, 1) 100%
+  );
+
   margin: 0;
 }
 
 .App {
-  border-image: linear-gradient(#f8f855, rgb(104 104 247)) 30;
+  border-image: linear-gradient(0deg, rgb(245, 204, 5, 1), rgb(10, 77, 250, 1)) 50;
   border-width: 10px;
   border-style: solid;
   width: 100vw;
