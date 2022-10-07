@@ -1,6 +1,6 @@
 import React from "react";
 import "../Header/Header.css";
-import logo from "../images/pokemonlogo.png";
+import logo from "../images/pokemon.png";
 
 export default function Header({ handleChange, getPokemon }) {
   return (
