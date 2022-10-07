@@ -1,9 +1,12 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+import Home from "./pages/Home/Home";
 import Footer from "./components/Footer/Footer";
 import axios from "axios";
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import BattleArena from "./pages/BattleArena/BattleArena";
+import Form from "./components/Form/Form";
 
 export default function App() {
   const [pokemons, setPokemon] = useState({});
@@ -24,10 +27,16 @@ export default function App() {
   };
 
   return (
-    <div className="App">
-      <Header handleChange={handleChange} getPokemon={getPokemon} />
-      <Main pokemons={pokemons} />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header handleChange={handleChange} getPokemon={getPokemon} />
+        <Form getPokemon={getPokemon} handleChange={handleChange} />
+        <Routes>
+          <Route path="/" element={<Home pokemons={pokemons} />} />
+          <Route path="/battlearena" element={<BattleArena />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
