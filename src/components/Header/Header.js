@@ -9,7 +9,7 @@ export default function Header({ handleChange, getPokemon }) {
       <form className="form" onSubmit={getPokemon}>
         <input className="form-input" name="name" placeholder="Name of Pokemon" onChange={handleChange} />
         <button className="form-button" type="submit">
-          Explore!
+          ◉
         </button>
       </form>
     </header>
