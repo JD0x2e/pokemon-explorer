@@ -7,11 +7,15 @@
 .header-logo {
   margin-bottom: 1em;
   margin-top: 1em;
-  width: 200px;
+  width: 140px;
 }
 
 .link {
   text-decoration: none;
-  color: white;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  width: 50px;
+  font-size: 13px;
 }

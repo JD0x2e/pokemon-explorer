@@ -14,21 +14,14 @@ body {
   margin: 0;
 }
 
-.App {
-  border-image: linear-gradient(0deg, rgb(245, 204, 5, 1), rgb(10, 77, 250, 1)) 50;
-  border-width: 10px;
-  border-style: solid;
-  width: 100vw;
-  height: 100vh;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
 .hide {
   display: none !important;
 }
 
-@media only screen and (min-width: 374px) {
-  .App {
-    height: 100%;
-  }
+.App {
+  border-image: linear-gradient(0deg, rgb(245, 204, 5, 1), rgb(10, 77, 250, 1)) 50;
+  border-width: 10px;
+  border-style: solid;
+  min-height: 100vh;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
