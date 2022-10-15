@@ -6,6 +6,7 @@ import axios from "axios";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BattleArena from "./pages/BattleArena/BattleArena";
+import About from "./pages/About/About";
 import Form from "./components/Form/Form";
 
 export default function App() {
@@ -33,7 +34,8 @@ export default function App() {
         <Form getPokemon={getPokemon} handleChange={handleChange} />
         <Routes>
           <Route path="/" element={<Home pokemons={pokemons} />} />
-          <Route path="/battlearena" element={<BattleArena />} />
+          <Route path="/battle" element={<BattleArena />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </div>

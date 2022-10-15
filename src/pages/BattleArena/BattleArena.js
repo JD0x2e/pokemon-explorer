@@ -6,7 +6,8 @@ export default function BattleArena() {
   return (
     <div className="battle-arena">
       <p>Battle Arena</p>
-      <Link to="/">Home</Link>
+      <Link to="/"></Link>
+      <Link to="/about"></Link>
     </div>
   );
 }

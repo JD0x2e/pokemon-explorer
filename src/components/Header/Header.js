@@ -9,8 +9,10 @@ export default function Header({ handleChange, getPokemon }) {
       <Link className="link" to="/battle">
         Battle Arena
       </Link>
-      <img className="header-logo" src={logo} alt="" />
-      <Link className="link" to="/">
+      <Link>
+        <img className="header-logo" src={logo} alt="" to="/" />
+      </Link>
+      <Link className="link" to="/about">
         About
       </Link>
     </header>
