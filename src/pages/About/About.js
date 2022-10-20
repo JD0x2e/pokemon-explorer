@@ -5,11 +5,13 @@ import "../About/About.css";
 export default function About() {
   return (
     <div className="about">
-      <h2>Welcome to Pokémon Explorer!</h2>
+      <h2 className="about-title">Welcome to Pokémon Explorer!</h2>
       <div className="about-container">
-        <p>
-          <br /> Here you can type in any Pokémon you want to find out the information about them.
+        <p className="info-top">
+          On Pokémon Explorer, you can type in any Pokémon you would like and it will fetch all of the relevant information
+          about that certain Pokémon.
         </p>
+        <p className="info-bottom">Happy hunting trainers!</p>
       </div>
       <Link className="link" to="/"></Link>
       <Link className="link" to="/battle"></Link>

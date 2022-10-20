@@ -7,14 +7,23 @@
 }
 
 .about-container {
-  width: 50%;
+  width: 75%;
   font-size: large;
+  text-align: center;
 }
 
-h2 {
+.about-title {
   width: 85%;
   display: flex;
   justify-content: center;
   text-align: center;
   margin-bottom: 0;
+}
+
+.info-top {
+  margin-top: 5em;
+}
+
+.info-bottom {
+  margin-top: 3em;
 }

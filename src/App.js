@@ -31,9 +31,16 @@ export default function App() {
     <BrowserRouter>
       <div className="App">
         <Header handleChange={handleChange} getPokemon={getPokemon} />
-        <Form getPokemon={getPokemon} handleChange={handleChange} />
         <Routes>
-          <Route path="/" element={<Home pokemons={pokemons} />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Form getPokemon={getPokemon} handleChange={handleChange} />
+                <Home pokemons={pokemons} />
+              </>
+            }
+          />
           <Route path="/battle" element={<BattleArena />} />
           <Route path="/about" element={<About />} />
         </Routes>
